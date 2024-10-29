@@ -1,0 +1,7 @@
+{
+  "name": "primeraPractica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

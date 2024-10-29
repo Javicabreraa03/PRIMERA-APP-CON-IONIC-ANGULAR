@@ -1,0 +1,84 @@
+ion-header {
+    img {
+      height: 80%; /* Ajusta la altura de la imagen al alto del toolbar */
+      max-height: 35px; /* Establece una altura máxima para la imagen */
+      margin-inline: auto; /* Empuja la imagen hacia la derecha */
+      margin-bottom: 5%;
+      display: block; /* Asegura que la imagen se trate como un bloque */
+      object-fit: contain; /* Mantiene la relación de aspecto de la imagen */
+    }
+  }
+  
+  ion-toolbar {
+    display: flex; /* Usa flexbox en el toolbar */
+    align-items: center; /* Centra verticalmente los elementos dentro del toolbar */
+  }
+
+  ion-title{
+    margin-inline:auto;
+
+  }
+  
+
+
+ion-content {
+    display: flex;
+    justify-content: center;  // Centra horizontalmente
+    align-items: center;      // Centra verticalmente
+    flex-direction: column;   // Asegura que los elementos se coloquen en columna
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+        text-align: center; /* Centra el texto */
+        background-color: transparent; /* Fondo transparente */
+        color: white; /* Letras blancas */
+        padding: 20px; /* Espaciado interno */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el texto */
+      
+        h3 {
+          font-weight: bold; /* Negrita */
+          text-decoration: underline; /* Subrayado */
+          margin: 0; /* Elimina el margen por defecto */
+        }
+      
+        h4 {
+          margin: 10px 0 0; /* Margen superior */
+        }
+      
+        /* Transición para el efecto hover */
+        &:hover {
+          background-color: red; /* Fondo rojo al pasar el ratón */
+          color: black; /* Letras negras al pasar el ratón */
+        }
+      }
+      
+      
+    ion-datetime {
+      margin: 20px 20px;        // Agrega margen arriba y abajo (20px)
+    }
+    ion-card {
+        ion-label {
+            h2 {
+              font-size: 16px; // Cambia este valor según tus necesidades
+              margin: 0; // Para eliminar cualquier margen predeterminado
+            }
+          
+            h3 {
+              font-size: 14px; // Cambia este valor según tus necesidades
+              margin-top: 4px; // Añadir margen superior para el espacio entre el título y el subtítulo
+              margin: 0; // Para eliminar cualquier margen predeterminado
+              color: darkgrey;
+            }
+          }
+      
+        // Opcional: estilizar el contenido de la tarjeta
+        ion-card-content {
+          font-size: 14px; // Cambia este valor según tus necesidades
+        }
+      }
+      
+  }
+  
